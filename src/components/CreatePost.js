@@ -3,7 +3,7 @@ import React from 'react';
 function CreatePost() {
   return (
     <div>
-      <h1>Create or Edit a Post</h1>
+      <h1>Create a Post</h1>
       <form>
         <input type="text" placeholder="Title" />
         <textarea placeholder="Content"></textarea>
