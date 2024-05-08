@@ -22,6 +22,7 @@ function Home() {
         </div>
       ))}
       {/* Link to create a new post */}
+
       <button>
         <Link to="/create-post">Create Post</Link>
       </button>
