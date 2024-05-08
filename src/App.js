@@ -5,11 +5,13 @@ import Home from './components/Home';
 import Post from './components/Post';
 import CreatePost from './components/CreatePost';
 
+
 function App() {
   const [auth, setAuth] = useState(false);
 
   return (
     <Router>
+      
       <Routes>
         <Route path="/login" element={<Login setAuth={setAuth} />} />
         <Route path="/" element={auth ? <Home /> : <Login setAuth={setAuth} />} />
