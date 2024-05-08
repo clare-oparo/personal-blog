@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Login from './Login';
-import Home from './Home';
-import Post from './Post';
-import CreatePost from './CreatePost';
+import Login from './components/Login';
+import Home from './components/Home';
+import Post from './components/Post';
+import CreatePost from './components/CreatePost';
 
 function App() {
   const [auth, setAuth] = useState(false);
