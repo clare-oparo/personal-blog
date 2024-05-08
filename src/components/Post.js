@@ -6,12 +6,11 @@ function Post() {
   const [post, setPost] = useState(null);
 
   useEffect(() => {
-    fetch('posts.json')
+    fetch('/posts.json')
       .then(response => response.json())
       .then(data => {
         const singlePost = data.find(p => p.id === parseInt(id));
-        setPost(singlePost);
-      })
+        setPost(singlePost)})
       .catch(error => console.error('Error loading post:', error));
   }, [id]);
 
